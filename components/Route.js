@@ -12,7 +12,7 @@ class Route extends React.Component {
 
   componentWillUnmount() {
     unregister(this);
-    removerEventListener('popstate', this.handlePop);
+    removeEventListener('popstate', this.handlePop);
   }
 
   handlePop = () => {
